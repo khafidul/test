@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>LandingUp2</title>
+  <title>LandingUp</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -30,591 +27,6 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- Custom CSS for the page -->
-  <style>
-    /* Header */
-    .header {
-      background: #343a40;
-      padding: 20px 0;
-    }
-
-    .header .logo h1 {
-      color: #fff;
-      font-size: 24px;
-    }
-
-    .header .navmenu ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-    }
-
-    .header .navmenu ul li {
-      margin: 0 15px;
-    }
-
-    .header .navmenu ul li a {
-      color: #fff;
-      text-decoration: none;
-      font-size: 16px;
-    }
-
-    .header .navmenu ul li a.active {
-      color: #ffc107;
-    }
-
-    .header .btn-getstarted {
-      background: #ffc107;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      font-size: 16px;
-      text-decoration: none;
-    }
-
-    .header .mobile-nav-toggle {
-      color: #fff;
-      font-size: 24px;
-      cursor: pointer;
-    }
-
-    /* Hero Section */
-    .hero {
-      background: url('assets/img/hero-bg.jpg') no-repeat center center;
-      background-size: cover;
-      color: #fff;
-      padding: 100px 0;
-      text-align: center;
-    }
-
-    .hero h1 {
-      font-size: 48px;
-      margin-bottom: 20px;
-    }
-
-    .hero p {
-      font-size: 20px;
-      margin-bottom: 30px;
-    }
-
-    .hero .btn-get-started {
-      background: #ffc107;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      font-size: 16px;
-      text-decoration: none;
-    }
-
-    /* Clients Section */
-    .clients {
-      background: #f8f9fa;
-      padding: 60px 0;
-    }
-
-    .clients .swiper-wrapper {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .clients .swiper-slide img {
-      width: 100px;
-      height: auto;
-      filter: grayscale(100%);
-      transition: filter 0.3s;
-    }
-
-    .clients .swiper-slide img:hover {
-      filter: grayscale(0%);
-    }
-
-    /* About Section */
-    .about {
-      padding: 60px 0;
-    }
-
-    .about .section-title h2 {
-      font-size: 36px;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-
-    .about .content {
-      font-size: 18px;
-      line-height: 1.6;
-    }
-
-    /* Why Us Section */
-    .why-us {
-      background: #f8f9fa;
-      padding: 60px 0;
-    }
-
-    .why-us .content h3 {
-      font-size: 24px;
-      margin-bottom: 20px;
-    }
-
-    .why-us .faq-container .faq-item {
-      margin-bottom: 20px;
-    }
-
-    .why-us .faq-container .faq-item h3 {
-      font-size: 18px;
-      margin-bottom: 10px;
-    }
-
-    .why-us .faq-container .faq-item .faq-content {
-      font-size: 16px;
-      line-height: 1.6;
-    }
-
-    .why-us .faq-container .faq-item .faq-toggle {
-      font-size: 24px;
-      cursor: pointer;
-    }
-
-    /* Services Section */
-    .services {
-      background: #f8f9fa;
-      padding: 60px 0;
-    }
-
-    .services .section-title h2 {
-      font-size: 36px;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-
-    .services .service-item {
-      background: #fff;
-      padding: 20px;
-      border-radius: 5px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      text-align: center;
-    }
-
-    .services .service-item .icon {
-      font-size: 48px;
-      margin-bottom: 20px;
-    }
-
-    .services .service-item h4 {
-      font-size: 20px;
-      margin-bottom: 10px;
-    }
-
-    .services .service-item p {
-      font-size: 16px;
-      line-height: 1.6;
-    }
-
-    /* Call To Action Section */
-    .call-to-action {
-      background: url('assets/img/cta-bg.jpg') no-repeat center center;
-      background-size: cover;
-      color: #fff;
-      padding: 60px 0;
-      text-align: center;
-    }
-
-    .call-to-action h3 {
-      font-size: 36px;
-      margin-bottom: 20px;
-    }
-
-    .call-to-action .cta-btn {
-      background: #ffc107;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      font-size: 16px;
-      text-decoration: none;
-    }
-
-    /* Portfolio Section */
-    .portfolio {
-      padding: 60px 0;
-    }
-
-    .portfolio .section-title h2 {
-      font-size: 36px;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-
-    .portfolio .portfolio-item {
-      margin-bottom: 30px;
-    }
-
-    .portfolio .portfolio-item img {
-      width: 100%;
-      height: auto;
-      border-radius: 5px;
-    }
-
-    .portfolio .portfolio-item .portfolio-info {
-      background: rgba(0, 0, 0, 0.8);
-      padding: 10px;
-      border-radius: 5px;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      opacity: 0;
-      transition: opacity 0.3s;
-    }
-
-    .portfolio .portfolio-item:hover .portfolio-info {
-      opacity: 1;
-    }
-
-    .portfolio .portfolio-item .portfolio-info h4 {
-      color: #fff;
-      font-size: 18px;
-      margin-bottom: 10px;
-    }
-
-    .portfolio .portfolio-item .portfolio-info p {
-      color: #fff;
-      font-size: 14px;
-      margin-bottom: 10px;
-    }
-
-    .portfolio .portfolio-item .portfolio-info .preview-link,
-    .portfolio .portfolio-item .portfolio-info .details-link {
-      color: #ffc107;
-      font-size: 16px;
-      text-decoration: none;
-      margin-right: 10px;
-    }
-
-    /* Pricing Section */
-    .pricing {
-      background: #f8f9fa;
-      padding: 60px 0;
-    }
-
-    .pricing .section-title h2 {
-      font-size: 36px;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-
-    .pricing .pricing-item {
-      background: #fff;
-      padding: 20px;
-      border-radius: 5px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      text-align: center;
-    }
-
-    .pricing .pricing-item h3 {
-      font-size: 24px;
-      margin-bottom: 20px;
-    }
-
-    .pricing .pricing-item h4 {
-      font-size: 36px;
-      margin-bottom: 20px;
-    }
-
-    .pricing .pricing-item ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    .pricing .pricing-item ul li {
-      font-size: 16px;
-      margin-bottom: 10px;
-    }
-
-    .pricing .pricing-item ul li.na {
-      color: #dc3545;
-    }
-
-    .pricing .pricing-item .buy-btn {
-      background: #ffc107;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      font-size: 16px;
-      text-decoration: none;
-    }
-
-    /* Testimonials Section */
-    .testimonials {
-      padding: 60px 0;
-    }
-
-    .testimonials .section-title h2 {
-      font-size: 36px;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-
-    .testimonials .swiper-wrapper {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .testimonials .swiper-slide {
-      background: #fff;
-      padding: 20px;
-      border-radius: 5px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      text-align: center;
-    }
-
-    .testimonials .swiper-slide h3 {
-      font-size: 20px;
-      margin-bottom: 10px;
-    }
-
-    .testimonials .swiper-slide p {
-      font-size: 16px;
-      line-height: 1.6;
-    }
-
-    /* Faq 2 Section */
-    .faq-2 {
-      background: #f8f9fa;
-      padding: 60px 0;
-    }
-
-    .faq-2 .section-title h2 {
-      font-size: 36px;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-
-    .faq-2 .faq-container .faq-item {
-      margin-bottom: 20px;
-    }
-
-    .faq-2 .faq-container .faq-item h3 {
-      font-size: 18px;
-      margin-bottom: 10px;
-    }
-
-    .faq-2 .faq-container .faq-item .faq-content {
-      font-size: 16px;
-      line-height: 1.6;
-    }
-
-    .faq-2 .faq-container .faq-item .faq-toggle {
-      font-size: 24px;
-      cursor: pointer;
-    }
-
-    /* Contact Section */
-    .contact {
-      padding: 60px 0;
-    }
-
-    .contact .section-title h2 {
-      font-size: 36px;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-
-    .contact .info-wrap {
-      background: #fff;
-      padding: 20px;
-      border-radius: 5px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .contact .info-wrap .info-item {
-      margin-bottom: 20px;
-    }
-
-    .contact .info-wrap .info-item i {
-      font-size: 24px;
-      margin-right: 10px;
-    }
-
-    .contact .info-wrap .info-item h3 {
-      font-size: 18px;
-      margin-bottom: 10px;
-    }
-
-    .contact .info-wrap .info-item p {
-      font-size: 16px;
-      line-height: 1.6;
-    }
-
-    .contact iframe {
-      width: 100%;
-      height: 300px;
-      border: none;
-      margin-top: 20px;
-    }
-
-    .contact form {
-      background: #fff;
-      padding: 20px;
-      border-radius: 5px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .contact form label {
-      font-size: 16px;
-      margin-bottom: 5px;
-    }
-
-    .contact form input,
-    .contact form textarea {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid #ced4da;
-      border-radius: 5px;
-      margin-bottom: 20px;
-    }
-
-    .contact form button {
-      background: #ffc107;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      font-size: 16px;
-      text-decoration: none;
-    }
-
-    /* Footer */
-    .footer {
-      background: #343a40;
-      color: #fff;
-      padding: 60px 0;
-    }
-
-    .footer .footer-top {
-      border-bottom: 1px solid #495057;
-      padding-bottom: 20px;
-      margin-bottom: 20px;
-    }
-
-    .footer .footer-about a {
-      color: #fff;
-      text-decoration: none;
-      font-size: 24px;
-    }
-
-    .footer .footer-about .footer-contact p {
-      font-size: 16px;
-      line-height: 1.6;
-    }
-
-    .footer .footer-links h4 {
-      font-size: 18px;
-      margin-bottom: 20px;
-    }
-
-    .footer .footer-links ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    .footer .footer-links ul li {
-      margin-bottom: 10px;
-    }
-
-    .footer .footer-links ul li a {
-      color: #fff;
-      text-decoration: none;
-      font-size: 16px;
-    }
-
-    .footer .social-links a {
-      color: #fff;
-      font-size: 24px;
-      margin-right: 10px;
-    }
-
-    .footer .copyright {
-      font-size: 14px;
-    }
-
-    .footer .credits {
-      font-size: 14px;
-    }
-
-    /* Scroll Top */
-    .scroll-top {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #ffc107;
-      color: #fff;
-      border: none;
-      padding: 10px;
-      border-radius: 50%;
-      font-size: 24px;
-      text-decoration: none;
-      z-index: 999;
-    }
-
-    /* WhatsApp Button */
-    .whatsapp-button {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #25d366;
-      color: #fff;
-      border: none;
-      padding: 10px;
-      border-radius: 50%;
-      font-size: 24px;
-      text-decoration: none;
-      z-index: 999;
-    }
-
-    .whatsapp-button img {
-      width: 30px;
-      height: 30px;
-    }
-
-    /* Preloader */
-    #preloader {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: #fff;
-      z-index: 9999;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    #preloader::after {
-      content: "";
-      width: 50px;
-      height: 50px;
-      border: 5px solid #ffc107;
-      border-top-color: transparent;
-      border-radius: 50%;
-      animation: spin 1s linear infinite;
-    }
-
-    @keyframes spin {
-      to {
-        transform: rotate(360deg);
-      }
-    }
-  </style>
-
   <!-- =======================================================
   * Template Name: Arsha
   * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
@@ -626,11 +38,10 @@
 
 <body class="index-page">
 
-
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
+      <a href="index.php" class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
         <h1 class="sitename">LandingUp</h1>
@@ -853,92 +264,6 @@
 
     </section><!-- /Why Us Section -->
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills section">
-
-      
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /Skills Section -->
-
-    <!-- Services Section -->
-    <section id="services" class="services section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Service</h2>
-        <p></p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-activity icon"></i></div>
-              <h4><a href="" class="stretched-link"></a></h4>
-              <p></p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div>
-              <h4><a href="" class="stretched-link"></a></h4>
-              <p></p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-calendar4-week icon"></i></div>
-              <h4><a href="" class="stretched-link"></a></h4>
-              <p></p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-broadcast icon"></i></div>
-              <h4><a href="" class="stretched-link"></a></h4>
-              <p></p>
-            </div>
-          </div><!-- End Service Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Services Section -->
-
-    <!-- Call To Action Section -->
-    <section id="call-to-action" class="call-to-action section dark-background">
-
-      <img src="assets/img/cta-bg.jpg" alt="">
-
-      <div class="container">
-
-        <div class="row" data-aos="zoom-in" data-aos-delay="100">
-          <div class="col-xl-9 text-center text-xl-start">
-            <h3>Call To Action</h3>
-            <p>
-              
-            </p>
-          </div>
-          <div class="col-xl-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="#">Call To Action</a>
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /Call To Action Section -->
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
@@ -1080,16 +405,16 @@
               <h3>Paket Shock Lite</h3>
               <h4><sup>Rp.</sup>250.000,<br><span> / bulan</span></h4>
               <ul>
-                <li><i class="bi bi-check"></i> <span>Free Hosting Unlimited</span></li>
-                <li><i class="bi bi-check"></i> <span>Free Domain .com</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>SSL (Keamanan Website)</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Email Profesional</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Setting SEO On Page</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Chat Whatsapp Button</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Mobile Friendly</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Free Konsultasi</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Support Maintenance 1 Tahun</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Perpanjangan Tahun Ke-2 Hanya 950rb</span></li>
+                <li><i class="bi bi-check"></i> <span>Free Hosting 0,5Gb</span></li>
+                <li><i class="bi bi-check"></i> <span>Free Domain .Biz.id, My.id</span></li>
+                <li><i class="bi bi-check"></i> <span>1 Halaman Landing Page</span></li>
+                <li><i class="bi bi-check"></i> <span>SSL (Keamanan Website)</span></li>
+                <li><i class="bi bi-check"></i> <span>Setting SEO On Page</span></li>
+                <li><i class="bi bi-check"></i> <span>Chat Whatsapp Button</span></li>
+                <li><i class="bi bi-check"></i> <span>Mobile Friendly</span></li>
+                <li><i class="bi bi-check"></i> <span>Free Konsultasi</span></li>
+                <li><i class="bi bi-check"></i> <span>Support Service 1 Tahun</span></li>
+                <li><i class="bi bi-check"></i> <span>Perpanjangan Tahun Ke-2 Hanya 350rb</span></li>
               </ul>
               <a href="#" class="buy-btn">Buy Now</a>
             </div>
@@ -1100,16 +425,16 @@
               <h3>Paket Shock</h3>
               <h4><sup>Rp.</sup>500.000,<br><span> / bulan</span></h4>
               <ul>
-                <li><i class="bi bi-check"></i> <span>Free Hosting Unlimited</span></li>
-                <li><i class="bi bi-check"></i> <span>Free Domain .com</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>SSL (Keamanan Website)</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Email Profesional</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Setting SEO On Page</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Chat Whatsapp Button</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Mobile Friendly</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Free Konsultasi</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Support Maintenance 1 Tahun</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Perpanjangan Tahun Ke-2 Hanya 950rb</span></li>
+                <li><i class="bi bi-check"></i> <span>Free Hosting 0,5Gb</span></li>
+                <li><i class="bi bi-check"></i> <span>Free Domain .Biz.id, My.id</span></li>
+                <li><i class="bi bi-check"></i> <span>1 Halaman Landing Page</span></li>
+                <li><i class="bi bi-check"></i> <span>SSL (Keamanan Website)</span></li>
+                <li><i class="bi bi-check"></i> <span>Setting SEO On Page</span></li>
+                <li><i class="bi bi-check"></i> <span>Chat Whatsapp Button</span></li>
+                <li><i class="bi bi-check"></i> <span>Mobile Friendly</span></li>
+                <li><i class="bi bi-check"></i> <span>Free Konsultasi</span></li>
+                <li><i class="bi bi-check"></i> <span>Support Service 1 Tahun</span></li>
+                <li><i class="bi bi-check"></i> <span>Perpanjangan Tahun Ke-2 Hanya 350rb</span></li>
               </ul>
               <a href="#" class="buy-btn">Buy Now</a>
             </div>
@@ -1120,16 +445,16 @@
               <h3>Paket Manual</h3>
               <h4><sup>Rp.</sup>1.800.000,<br><span> / bulan</span></h4>
               <ul>
-                <li><i class="bi bi-check"></i> <span>Free Hosting Unlimited</span></li>
+                <li><i class="bi bi-check"></i> <span>Free Hosting 1Gb</span></li>
                 <li><i class="bi bi-check"></i> <span>Free Domain .com</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>SSL (Keamanan Website)</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Email Profesional</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Setting SEO On Page</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Chat Whatsapp Button</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Mobile Friendly</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Free Konsultasi</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Support Maintenance 1 Tahun</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Perpanjangan Tahun Ke-2 Hanya 950rb</span></li>
+                <li><i class="bi bi-check"></i> <span>2 Halaman Landing Page</span></li>
+                <li><i class="bi bi-check"></i> <span>SSL (Keamanan Website)</span></li>
+                <li><i class="bi bi-check"></i> <span>Setting SEO On Page</span></li>
+                <li><i class="bi bi-check"></i> <span>Chat Whatsapp Button</span></li>
+                <li><i class="bi bi-check"></i> <span>Mobile Friendly</span></li>
+                <li><i class="bi bi-check"></i> <span>Free Konsultasi</span></li>
+                <li><i class="bi bi-check"></i> <span>Support Service 1 Tahun</span></li>
+                <li><i class="bi bi-check"></i> <span>Perpanjangan Tahun Ke-2 Hanya 850rb</span></li>
               </ul>
               <a href="#" class="buy-btn">Buy Now</a>
             </div>
@@ -1142,14 +467,14 @@
               <ul>
                 <li><i class="bi bi-check"></i> <span>Free Hosting Unlimited</span></li>
                 <li><i class="bi bi-check"></i> <span>Free Domain .com</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>SSL (Keamanan Website)</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Email Profesional</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Setting SEO On Page</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Chat Whatsapp Button</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Mobile Friendly</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Free Konsultasi</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Support Maintenance 1 Tahun</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Perpanjangan Tahun Ke-2 Hanya 950rb</span></li>
+                <li><i class="bi bi-check"></i> <span>SSL (Keamanan Website)</span></li>
+                <li><i class="bi bi-check"></i> <span>Email Profesional</span></li>
+                <li><i class="bi bi-check"></i> <span>Setting SEO On Page</span></li>
+                <li><i class="bi bi-check"></i> <span>Chat Whatsapp Button</span></li>
+                <li><i class="bi bi-check"></i> <span>Mobile Friendly</span></li>
+                <li><i class="bi bi-check"></i> <span>Free Konsultasi</span></li>
+                <li><i class="bi bi-check"></i> <span>Support Maintenance 1 Tahun</span></li>
+                <li><i class="bi bi-check"></i> <span>Perpanjangan Tahun Ke-2 Hanya 950rb</span></li>
               </ul>
               <a href="#" class="buy-btn">Buy Now</a>
             </div>
@@ -1269,7 +594,7 @@
 
         <div class="row gy-4">
 
-          <div class="col-lg-5">
+          <div class="col-lg-7">
 
             <div class="info-wrap">
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
@@ -1300,7 +625,7 @@
             </div>
           </div>
 
-          <div class="col-lg-7">
+          <div class="col-lg-4">
             <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
 
@@ -1449,12 +774,45 @@
 
   </footer>
 
+  <?php
+  // URL yang akan diolah
+  $url = "http://localhost/kpn10/";
+
+  // Memecah URL menjadi bagian-bagian
+  $parsedUrl = parse_url($url);
+
+  // Mengambil bagian path dari URL
+  $path = $parsedUrl['kpn10'];
+
+  // Menghapus karakter '/' di awal dan akhir
+  $slug = trim($path, '/');
+
+  // Menampilkan slug
+
+  // URL path yang akan dikirim melalui WhatsApp
+  $path = "kpn10 Halo! Mas/Mbak saya ingin pesan Landingpage";
+
+  // Format nomor telepon yang akan menerima pesan (contoh: 6281234567890)
+  $phoneNumber = "082245484237";
+
+  // Membuat link WhatsApp dengan URL path sebagai pesan
+  $whatsappLink = "https://wa.me/" . $phoneNumber . "?text=" . urlencode($path);
+
+  // Menampilkan link WhatsApp
+
+?>
+
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-  <a href="https://wa.link/uo3uw1" class="whatsapp-button">
+  <a href="<?php echo $whatsappLink;?>"  class="whatsapp-button">
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
   <!-- Preloader -->
   <div id="preloader"></div>
+
+ 
+
+
+
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
